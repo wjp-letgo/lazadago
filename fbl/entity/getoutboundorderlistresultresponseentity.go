@@ -1,15 +1,16 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetOutboundOrderListResultResponseEntity struct{
-    PerPage	int	`json:"per_page"`
-    Data	[]GetOutboundOrderListDataResponseEntity	`json:"data"`
-    Page	int	`json:"page"`
-    TotalCount	int	`json:"total_count"`
+type GetOutboundOrderListResultResponseEntity struct {
+	PerPage    int                                      `json:"per_page"`
+	Data       []GetOutboundOrderListDataResponseEntity `json:"data"`
+	Page       int                                      `json:"page"`
+	TotalCount int                                      `json:"total_count"`
 }
+
 func (g GetOutboundOrderListResultResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

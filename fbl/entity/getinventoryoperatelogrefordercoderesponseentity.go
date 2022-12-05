@@ -1,13 +1,14 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetInventoryOperateLogRefOrderCodeResponseEntity struct{
-    Type	string	`json:"type"`
-    OrderCode	string	`json:"order_code"`
+type GetInventoryOperateLogRefOrderCodeResponseEntity struct {
+	Type      string `json:"type"`
+	OrderCode string `json:"order_code"`
 }
+
 func (g GetInventoryOperateLogRefOrderCodeResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

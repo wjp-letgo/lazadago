@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type UploadImageDataResponseEntity struct{
-    Image	UploadImageImageResponseEntity	`json:"image"`
+type UploadImageDataResponseEntity struct {
+	Image UploadImageImageResponseEntity `json:"image"`
 }
+
 func (g UploadImageDataResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

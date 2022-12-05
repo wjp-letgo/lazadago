@@ -1,13 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GlobalEticketMerchantMaConsumeRespBodyResponseEntity struct{
-    AttributeMap	GlobalEticketMerchantMaConsumeAttributeMapResponseEntity	`json:"attribute_map"`
+type GlobalEticketMerchantMaConsumeRespBodyResponseEntity struct {
+	AttributeMap GlobalEticketMerchantMaConsumeAttributeMapResponseEntity `json:"attribute_map"`
 }
+
 func (g GlobalEticketMerchantMaConsumeRespBodyResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }
+
 type GlobalEticketMerchantMaConsumeAttributeMapResponseEntity struct{}

@@ -1,13 +1,14 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetWarehouseStockUnsellableResponseEntity struct{
-    Available	int	`json:"available"`
-    Reserved	int	`json:"reserved"`
+type GetWarehouseStockUnsellableResponseEntity struct {
+	Available int `json:"available"`
+	Reserved  int `json:"reserved"`
 }
+
 func (g GetWarehouseStockUnsellableResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

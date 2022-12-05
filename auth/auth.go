@@ -1,8 +1,9 @@
 package auth
+
 import (
 	"fmt"
 
-	lazadaConfig "github.com/wjpxxx/lazadago/config"
+	lazadaConfig "github.com/wjp-letgo/lazadago/config"
 )
 
 //Auth
@@ -12,5 +13,5 @@ type Auth struct {
 
 //AuthorizationURL
 func (a *Auth) AuthorizationURL(redirectUri string) string {
-	return fmt.Sprintf("%s?response_type=code&force_auth=true&redirect_uri=%s&client_id=%s",a.Config.GetApiUrl("all"),redirectUri,a.Config.AppKey)
+	return fmt.Sprintf("%s?response_type=code&force_auth=true&redirect_uri=%s&client_id=%s", a.Config.GetApiUrl("all"), redirectUri, a.Config.AppKey)
 }

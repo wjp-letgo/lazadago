@@ -1,14 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetFailureReasonsDataResponseEntity struct{
-    ReasonId	int	`json:"reason_id"`
-    Type	string	`json:"type"`
-    Name	string	`json:"name"`
+type GetFailureReasonsDataResponseEntity struct {
+	ReasonId int    `json:"reason_id"`
+	Type     string `json:"type"`
+	Name     string `json:"name"`
 }
+
 func (g GetFailureReasonsDataResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

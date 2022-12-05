@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetUnfilledAttributeItemOptionsResponseEntity struct{
-    Name	string	`json:"name"`
+type GetUnfilledAttributeItemOptionsResponseEntity struct {
+	Name string `json:"name"`
 }
+
 func (g GetUnfilledAttributeItemOptionsResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

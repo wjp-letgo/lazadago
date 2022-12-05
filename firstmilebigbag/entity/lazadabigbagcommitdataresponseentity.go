@@ -1,14 +1,15 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type LazadaBigbagCommitDataResponseEntity struct{
-    HandoverOrderId	int	`json:"handoverOrderId"`
-    HandoverContentId	int	`json:"handoverContentId"`
-    HandoverContentCode	string	`json:"handoverContentCode"`
+type LazadaBigbagCommitDataResponseEntity struct {
+	HandoverOrderId     int    `json:"handoverOrderId"`
+	HandoverContentId   int    `json:"handoverContentId"`
+	HandoverContentCode string `json:"handoverContentCode"`
 }
+
 func (g LazadaBigbagCommitDataResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

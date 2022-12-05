@@ -1,21 +1,21 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type SetStatusToPackedByMarketplaceResult struct{
-    Data	SetStatusToPackedByMarketplaceDataResponseEntity	`json:"data"`
-    Type	string	`json:"type"`
-    Code	string	`json:"code"`
-    Message	string	`json:"message"`
-    RequestId	string	`json:"request_id"`
-    Detail	[]SetStatusToPackedByMarketplaceDetailResponseEntity	`json:"detail"`
-}
-func (g SetStatusToPackedByMarketplaceResult) String() string {
-    return lib.ObjectToString(g)
+type SetStatusToPackedByMarketplaceResult struct {
+	Data      SetStatusToPackedByMarketplaceDataResponseEntity     `json:"data"`
+	Type      string                                               `json:"type"`
+	Code      string                                               `json:"code"`
+	Message   string                                               `json:"message"`
+	RequestId string                                               `json:"request_id"`
+	Detail    []SetStatusToPackedByMarketplaceDetailResponseEntity `json:"detail"`
 }
 
-type SetStatusToPackedByMarketplaceDetailResponseEntity struct{
-    
+func (g SetStatusToPackedByMarketplaceResult) String() string {
+	return lib.ObjectToString(g)
+}
+
+type SetStatusToPackedByMarketplaceDetailResponseEntity struct {
 }

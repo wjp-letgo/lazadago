@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetReverseOrdersForSellerBuyerResponseEntity struct{
-    BuyerId	int64	`json:"buyer_id"`
+type GetReverseOrdersForSellerBuyerResponseEntity struct {
+	BuyerId int64 `json:"buyer_id"`
 }
+
 func (g GetReverseOrdersForSellerBuyerResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

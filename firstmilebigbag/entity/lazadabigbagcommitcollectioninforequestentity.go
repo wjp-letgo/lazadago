@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type LazadaBigbagCommitCollectionInfoRequestEntity struct{
-    PickUpCode	string	`json:"pickUpCode"`
+type LazadaBigbagCommitCollectionInfoRequestEntity struct {
+	PickUpCode string `json:"pickUpCode"`
 }
+
 func (g LazadaBigbagCommitCollectionInfoRequestEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

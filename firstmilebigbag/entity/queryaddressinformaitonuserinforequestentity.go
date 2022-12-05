@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type QueryAddressInformaitonUserInfoRequestEntity struct{
-    AppUserKey	string	`json:"appUserKey"`
+type QueryAddressInformaitonUserInfoRequestEntity struct {
+	AppUserKey string `json:"appUserKey"`
 }
+
 func (g QueryAddressInformaitonUserInfoRequestEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

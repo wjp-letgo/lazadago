@@ -1,15 +1,16 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetNewBagNumberResultResponseEntity struct{
-    Successs	bool	`json:"successs"`
-    Data	GetNewBagNumberDataResponseEntity	`json:"data"`
-    ResponseMessage	string	`json:"response_message"`
-    ResponseCode	int	`json:"response_code"`
+type GetNewBagNumberResultResponseEntity struct {
+	Successs        bool                              `json:"successs"`
+	Data            GetNewBagNumberDataResponseEntity `json:"data"`
+	ResponseMessage string                            `json:"response_message"`
+	ResponseCode    int                               `json:"response_code"`
 }
+
 func (g GetNewBagNumberResultResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

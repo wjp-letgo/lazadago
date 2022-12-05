@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetCategoryAttributesOptionsResponseEntity struct{
-    Name	string	`json:"name"`
+type GetCategoryAttributesOptionsResponseEntity struct {
+	Name string `json:"name"`
 }
+
 func (g GetCategoryAttributesOptionsResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

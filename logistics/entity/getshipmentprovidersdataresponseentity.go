@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetShipmentProvidersDataResponseEntity struct{
-    ShipmentProviders	[]GetShipmentProvidersShipmentProvidersResponseEntity	`json:"shipment_providers"`
+type GetShipmentProvidersDataResponseEntity struct {
+	ShipmentProviders []GetShipmentProvidersShipmentProvidersResponseEntity `json:"shipment_providers"`
 }
+
 func (g GetShipmentProvidersDataResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

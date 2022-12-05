@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetCategorySuggestionDataResponseEntity struct{
-    CategorySuggestions	[]GetCategorySuggestionCategorySuggestionsResponseEntity	`json:"categorySuggestions"`
+type GetCategorySuggestionDataResponseEntity struct {
+	CategorySuggestions []GetCategorySuggestionCategorySuggestionsResponseEntity `json:"categorySuggestions"`
 }
+
 func (g GetCategorySuggestionDataResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

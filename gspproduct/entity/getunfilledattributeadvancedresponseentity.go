@@ -1,12 +1,13 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type GetUnfilledAttributeAdvancedResponseEntity struct{
-    IsKeyProp	int	`json:"is_key_prop"`
+type GetUnfilledAttributeAdvancedResponseEntity struct {
+	IsKeyProp int `json:"is_key_prop"`
 }
+
 func (g GetUnfilledAttributeAdvancedResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

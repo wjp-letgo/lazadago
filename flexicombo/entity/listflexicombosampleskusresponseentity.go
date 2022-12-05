@@ -1,13 +1,14 @@
 package entity
 
 import (
-    "github.com/wjpxxx/letgo/lib"
+	"github.com/wjp-letgo/letgo/lib"
 )
 
-type ListFlexiComboSampleSkusResponseEntity struct{
-    ProductId	int64	`json:"product_id"`
-    SkuId	int64	`json:"sku_id"`
+type ListFlexiComboSampleSkusResponseEntity struct {
+	ProductId int64 `json:"product_id"`
+	SkuId     int64 `json:"sku_id"`
 }
+
 func (g ListFlexiComboSampleSkusResponseEntity) String() string {
-    return lib.ObjectToString(g)
+	return lib.ObjectToString(g)
 }

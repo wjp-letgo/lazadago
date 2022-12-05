@@ -3,7 +3,7 @@ package auth
 import(
 	"testing"
 	"fmt"
-	lazadaConfig "github.com/wjpxxx/lazadago/config"
+	lazadaConfig "github.com/wjp-letgo/lazadago/config"
 )
 
 func TestAuth(t *testing.T){

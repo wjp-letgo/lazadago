@@ -2,7 +2,7 @@ package lazadago
 
 import (
 	"fmt"
-	lazadaConfig "github.com/wjpxxx/lazadago/config"
+	lazadaConfig "github.com/wjp-letgo/lazadago/config"
 	"testing"
 )
 
